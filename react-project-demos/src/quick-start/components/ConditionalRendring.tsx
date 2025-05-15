@@ -1,4 +1,6 @@
 import { useState } from "react";
+import LogIn from "./LogIn";
+import LogOut from "./LogOut";
 
 const ConditionalRendring = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
@@ -21,9 +23,7 @@ const ConditionalRendring = () => {
           Log Out
         </button>
       </div>
-      <div>
-        {isLoggedIn ? <h3>User is logged in</h3> : <h3>User is logged out</h3>}
-      </div>
+      <div>{isLoggedIn ? <LogIn /> : <LogOut />}</div>
     </div>
   );
 };
