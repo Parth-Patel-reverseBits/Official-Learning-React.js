@@ -4,8 +4,8 @@ const RendringLists = () => {
   return (
     <div className="mb-10">
       <h3 className="font-bold mt-5">Rendring Lists</h3>
-      <div>
-        <ul className="h-60 overflow-auto border-2 px-3 rounded-2xl">
+      <div className="border-2 rounded-2xl overflow-hidden">
+        <ul className="h-60 overflow-y-auto  px-3">
           {products.map((item) => {
             return (
               <li>
