@@ -84,7 +84,7 @@ const DateGenerator = () => {
   const getTodayDate = DateGeneratorFunction();
 
   return (
-    <div className="text-[#636368] text-3xl font-medium h-fit">
+    <div className="text-[#636368] text-2xl md:text-3xl font-medium h-fit">
       {getTodayDate}
     </div>
   );
