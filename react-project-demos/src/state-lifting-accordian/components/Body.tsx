@@ -13,7 +13,7 @@ const Body = () => {
       </h1>
       <div className="border-2 p-3">
         <Title>
-          <h1 className="font-medium">Robert Downy Jr</h1>
+          <h1 className="font-medium">Robert Downey Jr</h1>
         </Title>
         <Button
           accordianNumber={accordianNumber}
@@ -69,7 +69,7 @@ const Body = () => {
       </div>
       <div className="border-b-2 border-l-2 border-r-2 p-3">
         <Title>
-          <h1 className="font-medium">Scarlett Johanson</h1>
+          <h1 className="font-medium">Scarlett Johansson</h1>
         </Title>
         <Button
           accordianNumber={accordianNumber}
@@ -88,7 +88,7 @@ const Body = () => {
       </div>
       <div className="border-b-2 border-l-2 border-r-2 p-3">
         <Title>
-          <h1 className="font-medium">Jeremy Rener</h1>
+          <h1 className="font-medium">Jeremy Renner</h1>
         </Title>
         <Button
           accordianNumber={accordianNumber}
