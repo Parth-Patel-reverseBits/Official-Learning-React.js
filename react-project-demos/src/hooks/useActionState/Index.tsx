@@ -25,15 +25,16 @@ const Index = () => {
         <span className="text-red-500">{data?.error && data.error}</span>
         <span className="text-green-500">{data?.message && data.message}</span>
       </form>
-      {/* <NavigationButton /> */}
+      <NavigationButton path="/use-callback" />
     </div>
   );
 };
 
 export default Index;
+
 async function formState(previousState: string, formData: FormData) {
   const name = formData.get("name");
-  if (name.length === 0) {
+  if (name?.length === 0) {
     return { error: "Field is empty" };
   }
   await new Promise((resolve) => setTimeout(resolve, 2000));
