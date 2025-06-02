@@ -1,5 +1,5 @@
 import { useDeferredValue, useEffect, useState } from "react";
-
+import NavigationButton from "../../GlobalComponents/NavigationButton";
 const Index = () => {
   const [input, setInput] = useState<string>("");
   const deferredValue = useDeferredValue(input);
@@ -23,7 +23,9 @@ const Index = () => {
 
   return (
     <div className="flex flex-col h-screen justify-center items-center">
-      <h1 className="text-center font-semibold text-3xl">useDeferredValue</h1>
+      <h1 className="text-center font-semibold text-3xl">
+        useDeferredValue hook demo
+      </h1>
       <div className="w-full flex flex-col justify-center items-center gap-10">
         <input
           placeholder="write something here...!"
@@ -43,6 +45,10 @@ const Index = () => {
           </ul>
         </div>
       </div>
+      <NavigationButton path="/use-debug-value" left="left">
+        Go to previous page
+      </NavigationButton>
+      <NavigationButton path="/use-id">Go to next page</NavigationButton>
     </div>
   );
 };
