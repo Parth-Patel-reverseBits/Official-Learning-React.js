@@ -1,5 +1,6 @@
 import InputBox from "./components/InputBox";
 import InputBoxIssue from "./components/InputBoxIssue";
+import NavigationButton from "../../GlobalComponents/NavigationButton";
 const Index = () => {
   return (
     <div>
@@ -16,6 +17,9 @@ const Index = () => {
         <InputBox>Email</InputBox>
         <InputBox>Name</InputBox>
       </div>
+      <NavigationButton left="left" path="/Use-deferred-value">
+        Go to previous page
+      </NavigationButton>
     </div>
   );
 };
