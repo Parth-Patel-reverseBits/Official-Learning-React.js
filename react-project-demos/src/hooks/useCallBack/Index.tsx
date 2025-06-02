@@ -33,7 +33,11 @@ const Index = () => {
       <Count text="Salary" count={salary} />
       <Button onClick={handleIncrementSalary}>Increment Salary</Button>
 
-      <NavigationButton path="/use-context" />
+      <NavigationButton left="left" path="/use-action-state">
+        Go to previous page
+      </NavigationButton>
+
+      <NavigationButton path="/use-context">Go to next page</NavigationButton>
     </div>
   );
 };

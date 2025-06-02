@@ -25,7 +25,10 @@ const Index = () => {
         <span className="text-red-500">{data?.error && data.error}</span>
         <span className="text-green-500">{data?.message && data.message}</span>
       </form>
-      <NavigationButton path="/use-callback" />
+      <NavigationButton left="left" path="/">
+        Go to previous page
+      </NavigationButton>
+      <NavigationButton path="/use-callback">Go to next page</NavigationButton>
     </div>
   );
 };
