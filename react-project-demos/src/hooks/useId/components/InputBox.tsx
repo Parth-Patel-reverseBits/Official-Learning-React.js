@@ -1,6 +1,10 @@
 import { useId } from "react";
 
-const InputBox = ({ children }) => {
+interface childrenProps {
+  children: string;
+}
+
+const InputBox = ({ children }: childrenProps) => {
   const id = useId();
   return (
     <div>

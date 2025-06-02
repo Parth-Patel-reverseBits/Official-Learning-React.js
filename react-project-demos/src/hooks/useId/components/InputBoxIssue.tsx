@@ -1,6 +1,8 @@
-import { useId } from "react";
+interface childrenProps {
+  children: string;
+}
 
-const InputBox = ({ children }) => {
+const InputBox = ({ children }: childrenProps) => {
   return (
     <div>
       <label htmlFor="email">{children}:</label>
