@@ -16,7 +16,12 @@ const Index = () => {
           {isOnline ? "Online" : "Offline"}
         </strong>
       </p>
-      <NavigationButton path="/">Go to next page</NavigationButton>
+      <NavigationButton left="left" path="/use-context">
+        Go to previous page
+      </NavigationButton>
+      <NavigationButton path="/Use-deferred-value">
+        Go to next page
+      </NavigationButton>
     </div>
   );
 };

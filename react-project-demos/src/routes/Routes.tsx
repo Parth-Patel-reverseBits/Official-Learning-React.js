@@ -4,6 +4,7 @@ import UseActionState from "../hooks/useActionState/Index";
 import UseCallBack from "../hooks/useCallBack/Index";
 import UseContext from "../hooks/useContext/Index";
 import UseDebugValue from "../hooks/useDebugValue/Index";
+import UseDeferredValue from "../hooks/useDeferredValue/Index";
 const routes = () => {
   return (
     <Routes>
@@ -12,6 +13,7 @@ const routes = () => {
       <Route path="/use-callback" element={<UseCallBack />} />
       <Route path="/use-context" element={<UseContext />} />
       <Route path="/use-debug-value" element={<UseDebugValue />} />
+      <Route path="/Use-deferred-value" element={<UseDeferredValue />} />
     </Routes>
   );
 };
