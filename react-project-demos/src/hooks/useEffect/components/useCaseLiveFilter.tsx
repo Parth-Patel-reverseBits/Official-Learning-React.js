@@ -32,9 +32,11 @@ const useCaseLiveFilter = () => {
       <div className="w-full text-center flex justify-center mb-10">
         <table className="w-[80%]">
           <thead className="border-3">
-            <th>Name</th>
-            <th>Age</th>
-            <th>Description</th>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Description</th>
+            </tr>
           </thead>
           <tbody>
             {filterDarray.map((item) => (

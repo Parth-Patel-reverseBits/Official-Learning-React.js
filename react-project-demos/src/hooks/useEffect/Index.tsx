@@ -1,5 +1,5 @@
-import UseCaseLiveFilter from "./components/useCaseLiveFilter";
 import NavigationButton from "../../GlobalComponents/NavigationButton";
+import UseCaseLiveFilter from "./components/useCaseLiveFilter";
 
 const Index = () => {
   return (
@@ -8,10 +8,17 @@ const Index = () => {
         useEffect hook demo
       </h1>
       <UseCaseLiveFilter />
-      <div className="w-[16%] mb-10 ml-10">
-        <NavigationButton position="static" left="left" path="/use-id">
-          Go to previous page
-        </NavigationButton>
+      <div className="flex justify-between">
+        <div className="w-[16%] mb-10 ml-10">
+          <NavigationButton position="static" left="left" path="/use-id">
+            Go to previous page
+          </NavigationButton>
+        </div>
+        <div className="w-[14%] mb-10 mr-10">
+          <NavigationButton position="static" path="/use-ref">
+            Go to next page
+          </NavigationButton>
+        </div>
       </div>
     </div>
   );
