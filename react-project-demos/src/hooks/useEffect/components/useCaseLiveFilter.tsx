@@ -38,10 +38,10 @@ const useCaseLiveFilter = () => {
           </thead>
           <tbody>
             {filterDarray.map((item) => (
-              <tr className="border-2" key={item.key}>
-                <td className="w-[33%]">{item.name}</td>
-                <td className="w-[33%]">{item.age}</td>
-                <td className="w-[33%]">{item.description}</td>
+              <tr className="border-2" key={item?.key}>
+                <td className="w-[33%]">{item?.name}</td>
+                <td className="w-[33%]">{item?.age}</td>
+                <td className="w-[33%]">{item?.description}</td>
               </tr>
             ))}
           </tbody>
