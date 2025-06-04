@@ -4,14 +4,16 @@ interface PathProps {
   path: string;
   left?: string;
   children: string;
+  position?: string;
 }
 
-const NavigationButton = ({ left, path, children }: PathProps) => {
+const NavigationButton = ({ position, left, path, children }: PathProps) => {
+  console.log(position);
   return (
     <div>
       <Link
         to={path}
-        className={`fixed bottom-6 ${
+        className={`${position ? position : "fixed"} bottom-6 ${
           left === "left" ? "left-6" : "right-6"
         } px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm md:text-base rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out flex items-center gap-2 group`}
       >

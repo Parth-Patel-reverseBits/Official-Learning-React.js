@@ -6,6 +6,7 @@ interface childrenProps {
 
 const InputBox = ({ children }: childrenProps) => {
   const id = useId();
+
   return (
     <div>
       <label htmlFor={id}>{children}:</label>
