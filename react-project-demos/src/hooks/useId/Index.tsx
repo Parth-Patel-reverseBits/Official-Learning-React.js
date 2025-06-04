@@ -20,6 +20,7 @@ const Index = () => {
       <NavigationButton left="left" path="/Use-deferred-value">
         Go to previous page
       </NavigationButton>
+      <NavigationButton path="/Use-effect">Go to next page</NavigationButton>
     </div>
   );
 };

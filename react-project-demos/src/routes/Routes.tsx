@@ -6,6 +6,7 @@ import UseContext from "../hooks/useContext/Index";
 import UseDebugValue from "../hooks/useDebugValue/Index";
 import UseDeferredValue from "../hooks/useDeferredValue/Index";
 import UseId from "../hooks/useId/Index";
+import UseEffect from "../hooks/useEffect/Index";
 
 const routes = () => {
   return (
@@ -17,6 +18,7 @@ const routes = () => {
       <Route path="/use-debug-value" element={<UseDebugValue />} />
       <Route path="/Use-deferred-value" element={<UseDeferredValue />} />
       <Route path="/use-id" element={<UseId />} />
+      <Route path="/use-effect" element={<UseEffect />} />
     </Routes>
   );
 };
