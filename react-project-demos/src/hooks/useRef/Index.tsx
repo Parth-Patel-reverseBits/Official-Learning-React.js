@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import NavigationButton from "../../GlobalComponents/NavigationButton";
 
 const Index = () => {
   const [text, setText] = useState<string>("");
@@ -24,6 +25,12 @@ const Index = () => {
           {renderValue.current}
         </div>
       </div>
+      <NavigationButton left="left" path="/use-effect">
+        Go to previous page
+      </NavigationButton>
+      <NavigationButton path="/use-imperative-handle">
+        Go to next page
+      </NavigationButton>
     </div>
   );
 };
