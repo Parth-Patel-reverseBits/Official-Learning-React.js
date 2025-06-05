@@ -1,9 +1,10 @@
 import { useRef } from "react";
 import ChildrenCounter from "./components/ChildrenCounter";
+import type { CounterHandle } from "./Types/types";
 
 const Index = () => {
-  const ref = useRef(null);
-  console.log("This is from real parent", ref);
+  const ref = useRef<CounterHandle>(null);
+
   return (
     <div>
       <h1 className="mt-20 text-3xl text-center font-semibold">
