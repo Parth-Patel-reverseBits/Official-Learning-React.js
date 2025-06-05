@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import ChildrenCounter from "./components/ChildrenCounter";
 import type { CounterHandle } from "./Types/types";
+import NavigationButton from "../../GlobalComponents/NavigationButton";
 
 const Index = () => {
   const ref = useRef<CounterHandle>(null);
@@ -19,6 +20,9 @@ const Index = () => {
           Reset ⟳
         </button>
       </div>
+      <NavigationButton left="left" path="/use-ref">
+        Go to previous page
+      </NavigationButton>
     </div>
   );
 };
