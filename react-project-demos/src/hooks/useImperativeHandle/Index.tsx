@@ -23,6 +23,9 @@ const Index = () => {
       <NavigationButton left="left" path="/use-ref">
         Go to previous page
       </NavigationButton>
+      <NavigationButton path="/use-insertion-effect">
+        Go to next page
+      </NavigationButton>
     </div>
   );
 };

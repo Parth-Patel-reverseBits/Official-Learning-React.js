@@ -9,6 +9,7 @@ import UseId from "../hooks/useId/Index";
 import UseEffect from "../hooks/useEffect/Index";
 import UseRef from "../hooks/useRef/Index";
 import UseImperativeHandle from "../hooks/useImperativeHandle/Index";
+import UseInsertionEffect from "../hooks/useInsertionEffect/Index";
 
 const routes = () => {
   return (
@@ -23,6 +24,7 @@ const routes = () => {
       <Route path="/use-effect" element={<UseEffect />} />
       <Route path="/use-ref" element={<UseRef />} />
       <Route path="/use-imperative-handle" element={<UseImperativeHandle />} />
+      <Route path="/use-insertion-effect" element={<UseInsertionEffect />} />
     </Routes>
   );
 };
