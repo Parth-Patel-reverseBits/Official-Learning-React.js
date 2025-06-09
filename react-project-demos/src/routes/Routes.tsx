@@ -10,6 +10,8 @@ import UseEffect from "../hooks/useEffect/Index";
 import UseRef from "../hooks/useRef/Index";
 import UseImperativeHandle from "../hooks/useImperativeHandle/Index";
 import UseInsertionEffect from "../hooks/useInsertionEffect/Index";
+import UseLayoutEffect from "../hooks/useLayoutEffect/Index";
+import UseMemo from "../hooks/useMemo/Index";
 
 const routes = () => {
   return (
@@ -25,6 +27,8 @@ const routes = () => {
       <Route path="/use-ref" element={<UseRef />} />
       <Route path="/use-imperative-handle" element={<UseImperativeHandle />} />
       <Route path="/use-insertion-effect" element={<UseInsertionEffect />} />
+      <Route path="/use-layout-effect" element={<UseLayoutEffect />} />
+      <Route path="/use-memo" element={<UseMemo />} />
     </Routes>
   );
 };

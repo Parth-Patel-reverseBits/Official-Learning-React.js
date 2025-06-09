@@ -1,5 +1,5 @@
-// App.tsx
 import { useState, useInsertionEffect } from "react";
+import NavigationButton from "../../GlobalComponents/NavigationButton";
 
 const lightTheme = `
   body {
@@ -37,7 +37,7 @@ const Index = () => {
 
   return (
     <div style={{ padding: "2rem", textAlign: "center" }}>
-      <h1>Theme Switcher (useInsertionEffect)</h1>
+      <h1 className="text-3xl font-semibold">useInsertionEffect hook demo</h1>
       <button
         onClick={() =>
           setTheme((prev) => (prev === "light" ? "dark" : "light"))
@@ -51,6 +51,12 @@ const Index = () => {
       >
         Switch to {theme === "light" ? "Dark" : "Light"} Theme
       </button>
+      <NavigationButton left="left" path="/use-imperative-handle">
+        Go to previous page
+      </NavigationButton>
+      <NavigationButton path="/use-layout-effect">
+        Go to next page
+      </NavigationButton>
     </div>
   );
 };
