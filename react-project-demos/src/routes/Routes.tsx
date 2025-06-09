@@ -13,6 +13,7 @@ import UseInsertionEffect from "../hooks/useInsertionEffect/Index";
 import UseLayoutEffect from "../hooks/useLayoutEffect/Index";
 import UseMemo from "../hooks/useMemo/Index";
 import UseOptimistic from "../hooks/useOptimistic/Index";
+import UseSyncExternalStore from "../hooks/useSyncExternalStore/Index";
 
 const routes = () => {
   return (
@@ -31,6 +32,10 @@ const routes = () => {
       <Route path="/use-layout-effect" element={<UseLayoutEffect />} />
       <Route path="/use-memo" element={<UseMemo />} />
       <Route path="/use-optimistic" element={<UseOptimistic />} />
+      <Route
+        path="/use-sync-external-store"
+        element={<UseSyncExternalStore />}
+      />
     </Routes>
   );
 };

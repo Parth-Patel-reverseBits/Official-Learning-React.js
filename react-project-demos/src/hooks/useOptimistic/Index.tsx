@@ -13,7 +13,9 @@ const Index = () => {
         <NavigationButton left="left" path="/use-memo">
           Go to previous page
         </NavigationButton>
-        <NavigationButton path="">Go to next page</NavigationButton>
+        <NavigationButton path="/use-sync-external-store">
+          Go to next page
+        </NavigationButton>
       </div>
     </div>
   );
