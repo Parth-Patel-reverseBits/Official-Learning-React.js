@@ -1,20 +1,28 @@
-import { useState } from "react";
+import { useState, useOptimistic, startTransition } from "react";
 
-const NormalListDemo = () => {
+const OptimisticListDemo = () => {
   const [inputValue, setInputValue] = useState("");
   const [list, setList] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const handleOptimistValues = (prevState, newOptimisticValues) => {
+    return [...newOptimisticValues, prevState];
+  };
+  const [optimisticList, setOptimisticList] = useOptimistic(
+    list,
+    handleOptimistValues
+  );
+
+  console.log(optimisticList);
 
   const handleOnChangeInputValue = (e) => {
     setInputValue(e.target.value);
   };
 
-  const handleOnClickEvent = async () => {
-    setInputValue("");
-    setIsLoading(true);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsLoading(false);
-    setList([inputValue, ...list]);
+  const handleOnClickEvent = () => {
+    startTransition(async () => {
+      setOptimisticList([inputValue, ...list]);
+      setList([inputValue, ...list]);
+      setInputValue("");
+    });
   };
 
   const handleEnterKeyActivityEvent = (e) => {
@@ -22,11 +30,10 @@ const NormalListDemo = () => {
       handleOnClickEvent();
     }
   };
-
   return (
     <div className="text-[18px] mt-10">
       <div>
-        <h1 className="mb-2 text-[20px] font-medium">Normal list demo</h1>
+        <h1 className="mb-2 text-[20px] font-medium">Optimistic list demo</h1>
         <input
           value={inputValue}
           className="focus:outline-0 border-2 px-3 py-[6px] rounded-[5px]"
@@ -42,8 +49,7 @@ const NormalListDemo = () => {
         </button>
       </div>
       <div>
-        {isLoading && <span>Loading...</span>}
-        {list.map((item, index) => {
+        {optimisticList.map((item, index) => {
           return (
             <li key={index} className="list-none">
               {item}
@@ -55,4 +61,4 @@ const NormalListDemo = () => {
   );
 };
 
-export default NormalListDemo;
+export default OptimisticListDemo;
