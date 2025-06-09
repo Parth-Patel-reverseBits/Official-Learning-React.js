@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ChildrenCount from "./components/ChildrenCount";
+import NavigationButton from "../../GlobalComponents/NavigationButton";
 
 const Index = () => {
   const [count, setCount] = useState(0);
@@ -21,6 +22,12 @@ const Index = () => {
         </button>
       </div>
       <ChildrenCount parentCount={count} />
+      <NavigationButton left="left" path="/use-layout-effect">
+        Go to previous page
+      </NavigationButton>
+      <NavigationButton path="/use-optimistic">
+        Go to next page
+      </NavigationButton>
     </div>
   );
 };
