@@ -1,5 +1,6 @@
 import IssueHookDemo from "./components/IssueHookDemo";
 import SolvedIssueHookDemo from "./components/SolvedIssueHookDemo";
+import NavigationButton from "../../GlobalComponents/NavigationButton";
 const Index = () => {
   return (
     <div>
@@ -10,6 +11,9 @@ const Index = () => {
         <IssueHookDemo />
         <SolvedIssueHookDemo />
       </div>
+      <NavigationButton left="left" path="/use-sync-external-store">
+        Go to previous page
+      </NavigationButton>
     </div>
   );
 };
