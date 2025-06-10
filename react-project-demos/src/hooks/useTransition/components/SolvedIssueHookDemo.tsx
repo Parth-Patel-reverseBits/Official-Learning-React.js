@@ -30,6 +30,7 @@ const SolvedIssueHookDemo = () => {
           type="text"
         />
       </div>
+      {isPending && <div className="ml-30">Loading...</div>}
       <ul className="flex flex-col items-center">
         {list.map((item, index) => (
           <li key={index}>{item}</li>
