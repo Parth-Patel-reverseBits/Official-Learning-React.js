@@ -14,6 +14,7 @@ import UseLayoutEffect from "../hooks/useLayoutEffect/Index";
 import UseMemo from "../hooks/useMemo/Index";
 import UseOptimistic from "../hooks/useOptimistic/Index";
 import UseSyncExternalStore from "../hooks/useSyncExternalStore/Index";
+import UseTransition from "../hooks/useTransition/Index";
 
 const routes = () => {
   return (
@@ -36,6 +37,7 @@ const routes = () => {
         path="/use-sync-external-store"
         element={<UseSyncExternalStore />}
       />
+      <Route path="/use-transition" element={<UseTransition />} />
     </Routes>
   );
 };

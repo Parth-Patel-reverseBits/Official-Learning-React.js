@@ -15,7 +15,9 @@ const Index = () => {
       <NavigationButton left="left" path="/use-optimistic">
         Go to previous page
       </NavigationButton>
-      <NavigationButton path="">Go to next page</NavigationButton>
+      <NavigationButton path="/use-transition">
+        Go to next page
+      </NavigationButton>
     </div>
   );
 };
